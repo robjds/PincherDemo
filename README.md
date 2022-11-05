@@ -1,9 +1,10 @@
 # PincherDemo
-Basic movement scripts for a PincherX robot arm, using Matlab
+Basic movement scripts for a PincherX robot arm, using Matlab.
 
 These scripts run the [PincherX100 robot arm](https://www.trossenrobotics.com/docs/interbotix_xsarms/specifications/px100.html "PincherX Documentation") from Interbotix,
 which uses five [Dynamixel XL430](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/# "XL430 Documentation") smart servos.
 
+# Setup
 To run these files, you will first need to download the DynamixelSDK from: https://github.com/ROBOTIS-GIT/DynamixelSDK as a .zip file (see image below)
 ![image](https://user-images.githubusercontent.com/33760829/200147079-a5d04a1e-0289-4606-836b-b70442e52cac.png)
 
@@ -11,6 +12,7 @@ You will then need to extract the files and add them to your Matlab path, follow
 
 You only need to complete steps "4.14. 3. 1 Import Libraries" and "4. 14. 3.2 Import function reference" (i.e. you do not need to "Run example").
 
+# Code Usage
 Once these steps are completed, you can run the code.
 **Reach_Grab.m** will move the robot between two preset positions, based on user input in the Matlab command line. The preset positions, as well as the arm's speed and gripper force are defined on lines 32-42 in the code.
 
