@@ -12,6 +12,7 @@ You will then need to extract the files and add them to your Matlab path, follow
 You only need to complete steps "4.14. 3. 1 Import Libraries" and "4. 14. 3.2 Import function reference" (i.e. you do not need to "Run example").
 
 Once these steps are completed, you can run the code.
-Reach_Grab.m will move the robot between two preset positions, based on user input in the Matlab command line.
-Read_Positions.m will read the arm's current positions and print them. You can use this function to manually set the arm into a position, then read the joint angles to use as input for Reach_Grab.m 
+**Reach_Grab.m** will move the robot between two preset positions, based on user input in the Matlab command line. The preset positions, as well as the arm's speed and gripper force are defined on lines 32-42 in the code.
+
+**Read_Positions.m** will read the arm's current joint angles and print them to the command line. You can use this function to manually set the arm into a position, then read the joint angles to use as input for **Reach_Grab.m** 
 
