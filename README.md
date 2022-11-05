@@ -6,6 +6,7 @@ which uses five [Dynamixel XL430](https://emanual.robotis.com/docs/en/dxl/x/xl43
 
 # Setup
 To run these files, you will first need to download the DynamixelSDK from: https://github.com/ROBOTIS-GIT/DynamixelSDK as a .zip file (see image below)
+
 ![image](https://user-images.githubusercontent.com/33760829/200147079-a5d04a1e-0289-4606-836b-b70442e52cac.png)
 
 You will then need to extract the files and add them to your Matlab path, following the instructions here: https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_windows/#building-and-running-the-sample-code
@@ -13,7 +14,7 @@ You will then need to extract the files and add them to your Matlab path, follow
 You only need to complete steps "4.14. 3. 1 Import Libraries" and "4. 14. 3.2 Import function reference" (i.e. you do not need to "Run example").
 
 # Code Usage
-Once these steps are completed, you can run the code.
+Once the steps above are completed, you can run the code.
 **Reach_Grab.m** will move the robot between two preset positions, based on user input in the Matlab command line. The preset positions, as well as the arm's speed and gripper force are defined on lines 32-42 in the code.
 
 **Read_Positions.m** will read the arm's current joint angles and print them to the command line. You can use this function to manually set the arm into a position, then read the joint angles to use as input for **Reach_Grab.m** 
