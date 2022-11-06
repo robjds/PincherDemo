@@ -16,6 +16,8 @@ You only need to complete steps "4.14. 3. 1 Import Libraries" and "4. 14. 3.2 Im
 # Code Usage
 Once the steps above are completed, you can download and run this code in Matlab. **DynmixelStartup.m** defines the variables needed to control the motor and needs to be in the same directory for the other scripts to run.
 
+**Reach_Grab.m** and **Read_Positions.m** require you to set the correct COM port number. You can find this by connecting the arm/motor to the computer and to power, opening device manager and checking 'Ports (COM & LPT)'. There should be a COM port present (e.g. 'COM4'). Use this as the variable 'DEVICENAME' in the Matlab code on line 8.
+
 **Reach_Grab.m** will move the robot between two preset positions, based on user input in the Matlab command line. The preset positions, as well as the arm's speed and gripper force are defined on lines 32-42 in the code.
 
 **Read_Positions.m** will read the arm's current joint angles and print them to the command line. You can use this function to manually set the arm into a position, then read the joint angles to use as input for **Reach_Grab.m** 
