@@ -30,8 +30,8 @@ else
 end
 
 %% Set movement parameters
-
-up_position   = 10000; % the postion to winch up to (4095 = 1 revolution)
+no_of_revolutions = 4.5
+up_position   = round(4095*no_of_revolutions); % the postion to winch up to (4095 = 1 revolution)
 down_position = 0;     % the postion to winch down to
 goal_position = down_position;
 
