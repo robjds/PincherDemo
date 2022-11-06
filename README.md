@@ -16,7 +16,7 @@ You only need to complete steps "4.14. 3. 1 Import Libraries" and "4. 14. 3.2 Im
 # Code Usage
 Once the steps above are completed, you can download and run this code in Matlab. **DynmixelStartup.m** defines the variables needed to control the motor and needs to be in the same directory for the other scripts to run.
 
-**Reach_Grab.m** and **Read_Positions.m** require you to set the correct COM port number. You can find this by connecting the arm/motor to the computer and to power, opening device manager and checking 'Ports (COM & LPT)'. There should be a COM port present (e.g. 'COM20' in the image below). Use this as the variable 'DEVICENAME' in the Matlab code on line 8.
+**Reach_Grab.m** and **Read_Positions.m** require you to set the correct COM port number. You can find this by connecting the arm/motor to the computer and to power, opening device manager and checking 'Ports (COM & LPT)'. There should be a COM port present (e.g. 'COM21' in the image below). Use this as the variable 'DEVICENAME' in the Matlab code on line 8.
 
 ![image](https://user-images.githubusercontent.com/33760829/200176815-690d711d-e444-47ab-af6e-4fa3adb55e26.png)
 
