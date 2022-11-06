@@ -16,7 +16,7 @@ You only need to complete steps "4.14. 3. 1 Import Libraries" and "4. 14. 3.2 Im
 # Code Usage
 Once the steps above are completed, you can download and run this code in Matlab. **DynmixelStartup.m** defines the variables needed to control the motor and needs to be in the same directory for the other scripts to run.
 
-**Reach_Grab.m** and **Read_Positions.m** are for the PincherX robot arm (exercise 5), **Reel_Datalogger.m** is for the Dynamixel motor attached to a spool.
+**Reach_Grab.m** and **Read_Positions.m** are for the PincherX robot arm (*exercise 5*), **Reel_Datalogger.m** is for the Dynamixel motor attached to a spool (*exercise 4*).
 
 **Reach_Grab.m**, **Read_Positions.m** and **Reel_Datalogger.m** require you to set the correct COM port number. You can find this by connecting the arm/motor to the computer and to power, opening device manager and checking 'Ports (COM & LPT)'. There should be a COM port present (e.g. 'COM21' in the image below). Use this as the variable 'DEVICENAME' in the Matlab code on line 8.
 
@@ -26,5 +26,5 @@ Once the steps above are completed, you can download and run this code in Matlab
 
 **Read_Positions.m** will read the arm's current joint angles and print them to the command line. You can use this function to manually set the arm into a position, then read the joint angles to use as input for **Reach_Grab.m** 
 
-**Reel_Datalogger.m** is for the Dynamixel motor attached to a spool. The code will rotate the motor a specified number of revolutions, then produce a graph of velocity vs time.
+**Reel_Datalogger.m** is for the Dynamixel motor attached to a spool. The code will rotate the motor a specified number of revolutions (defined on line 33), then produce a graph of velocity vs time.
 
