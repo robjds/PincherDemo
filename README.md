@@ -11,7 +11,12 @@ To run these files, you will first need to download the DynamixelSDK from: https
 
 You will then need to extract the files and add them to your Matlab path, following the instructions here: https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_windows/#building-and-running-the-sample-code
 
+*Note* when you reach the step "Select [DynamixelSDK folder]/c/build/win32/output", you will need to select the 'win64' directory rather than win32, if your computer is 64bit.!
+
 You only need to complete steps "4.14. 3. 1 Import Libraries" and "4. 14. 3.2 Import function reference" (i.e. you do not need to "Run example").
+
+You may need to add a compiler to your matlab install. Click on 'Add-Ons' and search for MinGW, then install it: 
+[addonsmatlab](https://user-images.githubusercontent.com/33760829/202257148-be5c5df0-01cf-4df5-bc7d-927b03ae3ee2.png)
 
 # Code Usage
 Once the steps above are completed, you can download and run this code in Matlab. **DynmixelStartup.m** defines the variables needed to control the motor and needs to be in the same directory for the other scripts to run.
